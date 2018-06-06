@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/dark_background"
+    android:layout_height="match_parent"
+    tools:context="com.shivansh.iiitamun18.AboutMUNActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme"
+            android:background="@color/Black"
+            app:titleTextColor="@color/White" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:layout_weight="1"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="232dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/world_bank"
+              android:padding="10dp"
+              android:src="@drawable/worldbank" />
+
+          <ImageView
+              android:layout_width="246dp"
+              android:layout_height="189dp"
+              android:layout_weight="1"
+              android:id="@+id/reuters"
+              android:padding="10dp"
+              android:src="@drawable/reuters" />
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/aljazeera"
+                android:layout_weight="1"
+                android:src="@drawable/unnamed"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/britannica"
+                android:layout_weight="1"
+                android:src="@drawable/britannica"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

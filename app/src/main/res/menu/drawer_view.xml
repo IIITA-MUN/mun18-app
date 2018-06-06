@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group
+        android:id="@+id/first"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_home"
+            android:title="ABOUT US"
+            />
+        <item
+            android:id="@+id/about_mun"
+            android:icon="@drawable/ic_about_us"
+            android:title="ABOUT MUN" />
+        <item
+            android:id="@+id/committees"
+            android:icon="@drawable/ic_committees"
+            android:title="COMMITTEES" />
+    </group>
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/country_matrix"
+            android:icon="@drawable/ic_matrix"
+            android:title="COUNTRY MATRIX"
+            />
+        <item
+            android:id="@+id/apply"
+            android:icon="@drawable/ic_apply"
+            android:title="APPLY NOW" />
+        <item
+            android:id="@+id/gallery"
+            android:icon="@drawable/ic_image"
+            android:title="GALLERY" />
+    </group>
+    <group
+        android:id="@+id/third"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/resources"
+            android:icon="@drawable/ic_resources"
+            android:title="RESOURCES" />
+        <item
+            android:id="@+id/our_team"
+            android:icon="@drawable/ic_our_team"
+            android:title="OUR TEAM" />
+        <item
+            android:id="@+id/credits"
+            android:icon="@drawable/ic_android"
+            android:title="APP CREDITS" />
+
+    </group>
+</menu>
