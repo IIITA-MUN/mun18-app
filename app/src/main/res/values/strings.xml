@@ -46,6 +46,8 @@ Secretary-General"</string>
         <item>Executive Board</item>
     </array>
     <string name="title_activity_resources">Miscellaneous Resources</string>
+    <string name="title_activity_sec">Our Team</string>
+    <string name="title_activity_credits">App Credits</string>
 
 
 </resources>

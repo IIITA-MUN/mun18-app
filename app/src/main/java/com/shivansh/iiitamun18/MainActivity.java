@@ -71,6 +71,18 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             return true;
                         }
+                        if(menuItem.getItemId()==R.id.our_team)
+                        {
+                            Intent intent = new Intent(MainActivity.this,SecActivity.class);
+                            startActivity(intent);
+                            return true;
+                        }
+                        if(menuItem.getItemId()==R.id.credits)
+                        {
+                            Intent intent = new Intent(MainActivity.this,CreditsActivity.class);
+                            startActivity(intent);
+                            return true;
+                        }
                         return true;
                     }
                 });
