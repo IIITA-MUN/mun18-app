@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "835627275906",
+    "firebase_url": "https://iiita-mun-18.firebaseio.com",
+    "project_id": "iiita-mun-18",
+    "storage_bucket": "iiita-mun-18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835627275906:android:2c0af610a5746fb7",
+        "android_client_info": {
+          "package_name": "com.shivansh.iiitamun18"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835627275906-endujpfc8onmc13pglp3t5fdn3hk2d05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBeap2vfrmdYHkWMg50wbKYO2QkdqOE3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
