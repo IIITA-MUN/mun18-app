@@ -31,6 +31,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:26.0.0-beta1'
     compile "com.daimajia.swipelayout:library:1.2.0@aar"
     implementation 'com.android.support:recyclerview-v7:26.0.0-betal'
-
+    compile 'com.google.firebase:firebase-core:10.2.1'
+    implementation 'com.google.firebase:firebase-messaging:10.2.1'
 
 }
+apply plugin: 'com.google.gms.google-services'

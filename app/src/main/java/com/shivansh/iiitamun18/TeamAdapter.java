@@ -36,13 +36,13 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
 
         public ViewHolder(View v) {
             super(v);
-            mName = (TextView) itemView.findViewById(R.id.name_general);
-            mPost = (TextView) itemView.findViewById(R.id.post_general);
-            mCall = (ImageView) itemView.findViewById(R.id.call_gen);
-            mEmail = (ImageView) itemView.findViewById(R.id.mail_gen);
-            mFaceBook = (ImageView) itemView.findViewById(R.id.fb_gen);
+            mName = itemView.findViewById(R.id.name_general);
+            mPost = itemView.findViewById(R.id.post_general);
+            mCall = itemView.findViewById(R.id.call_gen);
+            mEmail = itemView.findViewById(R.id.mail_gen);
+            mFaceBook = itemView.findViewById(R.id.fb_gen);
 
-            mProfile = (ImageView) itemView.findViewById(R.id.image_gen);
+            mProfile = itemView.findViewById(R.id.image_gen);
 
         }
     }
