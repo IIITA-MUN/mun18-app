@@ -48,6 +48,7 @@ Secretary-General"</string>
     <string name="title_activity_resources">Miscellaneous Resources</string>
     <string name="title_activity_sec">Our Team</string>
     <string name="title_activity_credits">App Credits</string>
+    <string name="title_activity_gallery">Gallery</string>
     <string name="default_notification_channel_id">com.shivansh.iiitamun18</string>
 
 

@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/dark_background"
+    android:background="@drawable/credits_background"
     android:layout_height="match_parent"
     tools:context="com.shivansh.iiitamun18.AboutMUNActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -22,28 +26,36 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="App Developer"
-           android:textSize="40dp"
+           android:layout_marginTop="20dp"
+           android:fontFamily="sans-serif-smallcaps"
+           android:textColor="#6e6e6e"
+           android:textSize="36sp"
            android:layout_gravity="center"/>
+
         <com.mikhaellopez.circularimageview.CircularImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/shivansh"
             android:layout_gravity="center"
             app:civ_border="true"
-            app:civ_border_color="@color/DarkGreen"
-            app:civ_border_width="8dp"/>
+            app:civ_border_color="#575757"
+            app:civ_border_width="6dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Shivansh Tiwari"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="28sp"
+            android:textColor="#b0b0b0"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Creative Designer"
-            android:textSize="40sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ff6e6e6e"
+            android:textSize="36sp"
             android:layout_gravity="center"/>
         <com.mikhaellopez.circularimageview.CircularImageView
             android:layout_width="150dp"
@@ -55,10 +67,12 @@
             app:civ_border_width="8dp"/>
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="#b0b0b0"
             android:layout_height="wrap_content"
             android:text="Komal Bhadani"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="28sp"
             android:layout_gravity="center"/>
     </LinearLayout>
-
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

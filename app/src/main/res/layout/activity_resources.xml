@@ -1,65 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/dark_background"
     android:layout_height="match_parent"
+    android:background="@drawable/dark1_background"
     tools:context="com.shivansh.iiitamun18.AboutMUNActivity">
 
-    <LinearLayout
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Black"
+        android:theme="@style/AppTheme"
+        app:titleTextColor="@color/White" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:theme="@style/AppTheme"
-            android:background="@color/Black"
-            app:titleTextColor="@color/White" />
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:padding="10dp"
-          android:layout_weight="1"
-          android:orientation="horizontal">
+        android:layout_alignParentTop="true"
+        android:id="@+id/topView"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
 
-          <ImageView
-              android:layout_width="232dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1"
-              android:id="@+id/world_bank"
-              android:padding="10dp"
-              android:src="@drawable/worldbank" />
 
-          <ImageView
-              android:layout_width="246dp"
-              android:layout_height="189dp"
-              android:layout_weight="1"
-              android:id="@+id/reuters"
-              android:padding="10dp"
-              android:src="@drawable/reuters" />
-      </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/aljazeera"
-                android:layout_weight="1"
-                android:src="@drawable/unnamed"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/britannica"
-                android:layout_weight="1"
-                android:src="@drawable/britannica"/>
-        </LinearLayout>
-    </LinearLayout>
+            android:layout_gravity="start"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="75dp"
+            android:layout_marginStart="20dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
 
-</android.support.constraint.ConstraintLayout>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/world_bank"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/worldbank" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="75dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/reuters"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/reuters" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/topView"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/aljazeera"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/unnamed" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/britannica"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/britannica" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
