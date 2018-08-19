@@ -9,7 +9,7 @@
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/White"
+        android:background="@drawable/dark1_background"
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
@@ -22,9 +22,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:id="@+id/about_heading"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/DodgerBlue"
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:text="TITLE"/>
@@ -36,18 +36,19 @@
                     android:src="@drawable/iiita_mun"/>
 
                 <TextView
-                    android:padding="20dp"
+                    android:padding="14dp"
                     android:id="@+id/about_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/DimGray"
+                    android:textSize="15sp"
                     android:text="@string/sec_general_msg"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/read_more"
                     android:text="Read More"
-                    android:background="@color/DarkBlue" />
+                    android:background="@color/DodgerBlue" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

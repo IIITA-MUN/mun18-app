@@ -83,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             return true;
                         }
+                        if(menuItem.getItemId()==R.id.gallery)
+                        {
+                            Intent intent = new Intent(MainActivity.this,Gallery.class);
+                            startActivity(intent);
+                            return true;
+                        }
                         return true;
                     }
                 });

@@ -4,4 +4,4 @@
     android:name="com.shivansh.iiitamun18.CommitteesFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout="@layout/fragment_committees" />
+    tools:layout="@layout/fragment_committees"/>

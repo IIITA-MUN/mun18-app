@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/dark_background"
+    android:background="@color/Black"
     android:layout_height="match_parent"
     tools:context="com.shivansh.iiitamun18.AboutMUNActivity">
 
@@ -28,18 +28,26 @@
                android:orientation="vertical">
                <ImageView
                    android:layout_width="wrap_content"
-                   android:layout_height="200dp"
-                   android:src="@drawable/mun_about" />
+                   android:layout_height="180dp"
+                   android:src="@drawable/mun_logo" />
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginRight="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginStart="4dp"
+                   android:textSize="16sp"
                    android:text="@string/about_mun"/>
                <Button
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:id="@+id/read_aboutmun"
+                   android:layout_marginTop="10dp"
+                   android:textSize="16sp"
                    android:text="Read more about MUN"
-                   android:background="@color/DarkBlue" />
+                   android:background="@color/DodgerBlue" />
            </LinearLayout>
         </ScrollView>
     </LinearLayout>
