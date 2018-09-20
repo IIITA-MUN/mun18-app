@@ -54,16 +54,16 @@ public class AboutUsFragment extends Fragment {
         View rootview =  inflater.inflate(R.layout.fragment_about_us, container, false);
 
         int position = getArguments().getInt("Section Number");
-        TextView AboutDetails = (TextView) rootview.findViewById(R.id.about_content);
-        TextView AboutTitle = (TextView) rootview.findViewById(R.id.about_heading);
-        ImageView aboutimage = (ImageView) rootview.findViewById(R.id.about_image);
+        TextView AboutDetails = rootview.findViewById(R.id.about_content);
+        TextView AboutTitle = rootview.findViewById(R.id.about_heading);
+        ImageView aboutimage = rootview.findViewById(R.id.about_image);
 
         aboutimage.setImageResource(mResources[position]);
         AboutDetails.setText(mDetails[position]);
         AboutTitle.setText(mTitles[position]);
 
         final String url = mURLs[position];
-        Button button = (Button)rootview.findViewById(R.id.read_more);
+        Button button = rootview.findViewById(R.id.read_more);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openWebPage(url);
