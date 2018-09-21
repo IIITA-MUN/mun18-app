@@ -31,10 +31,6 @@
             android:id="@+id/apply"
             android:icon="@drawable/ic_apply"
             android:title="APPLY NOW" />
-        <item
-            android:id="@+id/gallery"
-            android:icon="@drawable/ic_image"
-            android:title="GALLERY" />
     </group>
     <group
         android:id="@+id/third"

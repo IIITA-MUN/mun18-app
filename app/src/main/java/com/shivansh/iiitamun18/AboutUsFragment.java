@@ -25,7 +25,7 @@ public class AboutUsFragment extends Fragment {
     int mResources[] = {R.drawable.iiita, R.drawable.mun_about, R.drawable.mun_logo_iiita, R.drawable.lit};
 
 
-    String[] mURLs = {"https://www.iiita.ac.in","https://www.iiita.ac.in","https://mun.iiita.ac.in","https://sarasva.iiita.ac.in"};
+    String[] mURLs = {"https://www.iiita.ac.in","https://www.iiita.ac.in","https://mun.iiita.ac.in/home/home.html","https://sarasva.iiita.ac.in"};
 
     String[] mDetails = {
             "The Indian Institute of Information Technology Allahabad (IIIT-A) was established in 1999, as a Center of Excellence in Information Technology and allied areas. The institute was conferred the “Deemed University” status by Government of India in the year 2000.\n" +
@@ -35,7 +35,7 @@ public class AboutUsFragment extends Fragment {
                     "The beautiful 100 acre campus, situated at Deoghat, Jhalwa, designed meticulously on the Penrose Geometry pattern, is being further topped by fine landscaping to give an all round soothing effect to create a stimulating environment.",
             "Effervescence, the cultural fest of IIIT Allahabad, has grown into one of the largest and most entertaining cultural festivals of India. The cultural spirits of all mingle to bring forth the fizz, frolic and festivity of this 3 day extravaganza.\n"
                     +"\n" +
-                    "Effervescence is a lively journey with 3 days of high octane entertainment. The festivities comprise of a plethora of informal events in the morning, and in the evening, a full platter if dance, dramatics, music and literary competitions unfold. The final night of Effervescence has seen bands like Bombay Vikings, Euphoria, Silk Route and Strings, along with celebrities such as Neha Kakkar, Sona Mohapatra and Daler Mehndi performing live.\n" +
+                    "Effervescence is a lively journey with 3 days of high octane entertainment. The festivities comprise of a plethora of informal events in the morning, and in the evening, a full platter if dance, dramatics, music and literary competitions unfold. The final night of Effervescence has seen bands like Bombay Vikings, Euphoria, Silk Route, Strings, Local Train etc., along with celebrities such as Neha Kakkar, Sona Mohapatra, Daler Mehndi, Farhan Akhtar performing live.\n" +
                     "\n" +
                     "Effervescence is the time that allows the youth to fully express themselves - be it through art, culture or entertainment.",
             "IIITA MUN is the first Model United Nations in the city of Allahabad. Started in 2014, it is an intiative which aims to establish a healthy MUNing culture. IIITA MUN will check one’s ability to research, persuade, and lead, testing the fledgling diplomat in them. Delegates will work with participants from all over the country in a highly competitive environment. In dissecting world affairs and creating policies in a conference of the highest quality, we hope to transform you from students into future leaders, all the while creating unforgettable memories.",

@@ -26,14 +26,14 @@ public class CommitteesFragment extends Fragment {
         Button disecsite = (Button) rootview.findViewById(R.id.disec_site);
         disecsite.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openWebPage("http://www.un.org/en/ga/first/");
+                openWebPage("https://mun.iiita.ac.in/home/unhrc.html");
             }
         });
 
         Button unscsite = (Button)rootview.findViewById(R.id.unsc_site);
         unscsite.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openWebPage("http://www.un.org/en/sc/");
+                openWebPage("https://mun.iiita.ac.in/home/g20.html");
             }
         });
 

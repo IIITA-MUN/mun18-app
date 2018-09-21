@@ -1,58 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/White"
-    android:layout_margin="10dp"
+    android:background="@drawable/background_1"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/Blue"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content">
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:id="@+id/image_gen"
-        app:layout_constraintHorizontal_bias="0.4"
-        android:src="@drawable/niharika"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/post_general"
-        android:id="@+id/name_general"
-        android:textColor="@color/Black"
-        android:text="Mantek Singh"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/image_gen"
-        android:id="@+id/post_general"
-        android:textColor="@color/Black"
-        android:text="Sec general"/>
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/call_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/image_gen"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/call_gen" />
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/fb_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/image_gen"
-        app:layout_constraintLeft_toRightOf="@+id/call_gen"
-        android:id="@+id/fb_gen" />
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/mail_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/image_gen"
-        app:layout_constraintLeft_toRightOf="@+id/fb_gen"
-        android:id="@+id/mail_gen" />
-</android.support.constraint.ConstraintLayout>
+    android:layout_height="240dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                app:civ_border="false"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="7"
+                app:civ_shadow_color="@color/DimGray"
+                android:id="@+id/image_gen"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/mantek" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="@color/GhostWhite"
+                android:layout_marginTop="2dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/name_general"
+                            android:gravity="center_horizontal"
+                            android:textSize="23sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@color/Black"
+                            android:text="Mantek Singh"/>
+
+                        <TextView
+                            android:id="@+id/post_general"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name_general"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="7dp"
+                            android:text="Sec General"
+                            android:textColor="@color/Gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="2dp"
+                        android:layout_toRightOf="@+id/name"
+                        android:layout_toEndOf="@+id/name"
+                        android:layout_centerInParent="true"
+                        android:background="@color/LightSlateGray">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/contact"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/call_icon"
+                            android:id="@+id/call_gen" />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/fb_icon"
+                            android:id="@+id/fb_gen" />
+
+                        <ImageView
+                            android:id="@+id/mail_gen"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/mail_icon" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
