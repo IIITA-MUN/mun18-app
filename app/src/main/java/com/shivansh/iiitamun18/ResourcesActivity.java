@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -17,14 +21,23 @@ public class ResourcesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resources);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionbar = getSupportActionBar();
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        //ActionBar actionbar = getSupportActionBar();
+
+//        if (actionbar != null) {
+//            Log.e("log","NULL");
+//            actionbar.setDisplayHomeAsUpEnabled(true);
+//        }
+      ImageView backpress = (ImageView)findViewById(R.id.back_button);
 
 
-        if (actionbar != null) {
-            actionbar.setDisplayHomeAsUpEnabled(true);
-        }
+        backpress.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                finish();
+            }
+        });
 
         ImageView worldbank = (ImageView)findViewById(R.id.world_bank);
 
@@ -56,6 +69,7 @@ public class ResourcesActivity extends AppCompatActivity {
         });
     }
     public void openWebPage(String url){
+
         Uri uri = Uri.parse(url);
 
         Intent intent = new Intent(Intent.ACTION_VIEW,uri);

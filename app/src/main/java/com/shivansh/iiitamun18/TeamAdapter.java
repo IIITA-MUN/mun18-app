@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 /**
@@ -52,15 +54,8 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     @Override
     public TeamAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                      int viewType) {
-        View view = null;
-        switch (viewType) {
-            case (1):
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_generals, parent, false);
-                break;
-            case (0):
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_usg, parent, false);
-                break;
-        }
+        View view ;
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_generals, parent, false);
         return new ViewHolder(view);
 
     }
@@ -69,7 +64,8 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        holder.mProfile.setImageResource(TeamList.get(position).getimage());
+        Glide.with(context).load(TeamList.get(position).getimage()).into(holder.mProfile);
+        //holder.mProfile.setImageResource(TeamList.get(position).getimage());
         holder.mName.setText(TeamList.get(position).getname());
         holder.mPost.setText(TeamList.get(position).getdes());
 
@@ -79,7 +75,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         holder.mCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                  makecall(TeamList.get(finalPosition).getno());
+                makecall(TeamList.get(finalPosition).getno());
             }
         });
 
@@ -103,13 +99,13 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" +callNumber));
         context.startActivity(intent);
-        }
-        public void sendmail(String email){
-            String emailId = email;
-            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                    "mailto",emailId, null));
-            context.startActivity(Intent.createChooser(intent, "Choose an Email client :"));
-        }
+    }
+    public void sendmail(String email){
+        String emailId = email;
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto",emailId, null));
+        context.startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+    }
     public void openWebPage(String url){
         Uri uri = Uri.parse(url);
 
@@ -125,7 +121,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     @Override
     public int getItemViewType(int position) {
         if( TeamList.get(position).isgeneral == 1)
-             return 1;
+            return 1;
         else
             return 0;
     }

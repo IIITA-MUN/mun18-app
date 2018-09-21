@@ -9,7 +9,7 @@
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/dark_background"
+        android:background="@drawable/dark1_background"
         android:orientation="vertical">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -18,99 +18,139 @@
             android:theme="@style/AppTheme"
             android:background="@color/Black"
             app:titleTextColor="@color/White" />
-      <ScrollView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-              <LinearLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/layout_disec"
-                  android:orientation="vertical"
-                  android:layout_margin="10dp"
-                  android:background="@color/Black"
-                  android:layout_weight="1">
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="center"
-                      android:textSize="20sp"
-                      android:text="@string/disec_short" />
-                  <ImageView
-                      android:layout_width="match_parent"
-                      android:layout_height="200dp"
-                      android:layout_gravity="center"
-                      android:src="@drawable/disec"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_disec"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="1dp"
+                        android:background="@color/DimGray"
+                        >
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="22sp"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:text="UNHRC" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/DimGray"
+                        >
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/unhrc"/>
 
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:textSize="13sp"
-                      android:layout_marginTop="5dp"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="center"
-                      android:text="@string/disec_long" />
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:textSize="15sp"
-                      android:layout_marginTop="10dp"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="center"
-                      android:text="@string/detail_disec" />
-              <Button
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:text="Official Website"
-                  android:background="@color/DarkBlue"
-                  android:id="@+id/disec_site"/>
-              </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:background="@color/DimGray"
+                        android:padding="3dp"
+                        android:text="The United Nations Human Rights Council" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text= "The United Nations Human Rights Council (UNHRC) is a United Nations body whose mission is to promote and protect human rights around the world.[2] The UNHRC has 47 members elected for staggered three-year terms on a regional group basis."/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Know More"
+                        android:background="@color/DodgerBlue"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:id="@+id/disec_site"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:background="@color/DimGray"
+                    >
+                </LinearLayout>
 
-              <LinearLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="vertical"
-                  android:id="@+id/layout_unsc"
-                  android:layout_margin="10dp"
-                  android:clickable="true"
-                  android:background="@color/Black"
-                  android:layout_weight="1">
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:textSize="20sp"
-                      android:layout_gravity="center"
-                      android:text="@string/unsc_short" />
-                  <ImageView
-                      android:layout_width="match_parent"
-                      android:layout_height="200dp"
-                      android:layout_gravity="center"
-                      android:src="@drawable/unsc"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_unsc"
+                    android:clickable="true"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="@color/White"
+                        android:layout_gravity="center"
+                        android:text="G20" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/DimGray"
+                        >
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/g20"/>
 
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:textSize="15sp"
-                      android:layout_marginTop="5dp"
-                      android:layout_gravity="center"
-                      android:text="@string/unsc_long" />
-                  <TextView
-                      android:layout_width="wrap_content"
-                      android:textSize="15sp"
-                      android:layout_marginTop="10dp"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="center"
-                      android:text="@string/detail_unsc" />
-                  <Button
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="Official Website"
-                      android:id="@+id/unsc_site"
-                      android:background="@color/DarkBlue"/>
-              </LinearLayout>
-          </LinearLayout>
-      </ScrollView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:background="@color/DimGray"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="3dp"
+                        android:text="Group of Twenty" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="The G20 (or Group of Twenty) is an international forum for the governments and central bank governors from Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea, Turkey, the United Kingdom, the United States and the European Union." />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Know More"
+                        android:id="@+id/unsc_site"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif"
+                        android:background="@color/DodgerBlue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

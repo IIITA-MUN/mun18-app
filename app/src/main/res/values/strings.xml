@@ -45,10 +45,17 @@ Secretary-General"</string>
         <item>Delegate</item>
         <item>Executive Board</item>
     </array>
+    <array name="string_array_matrix">
+        <item>UNHRC</item>
+        <item>G20</item>
+    </array>
+    <array name="string_array_letter">
+        <item>UNHRC</item>
+    </array>
     <string name="title_activity_resources">Miscellaneous Resources</string>
     <string name="title_activity_sec">Our Team</string>
     <string name="title_activity_credits">App Credits</string>
-    <string name="default_notification_channel_id">com.shivansh.iiitamun18</string>
+    <string name="title_activity_gallery">Gallery</string>
 
 
 </resources>

@@ -25,12 +25,12 @@ public class ApplyNowFragment extends DialogFragment {
                         switch (position) {
                             case 0:
                                 Intent i = new Intent(getContext(), ApplyNow.class);
-                                i.putExtra("LINK", "https://docs.google.com/forms/d/e/1FAIpQLSfHE_mLQEqx5JylrIu9mK6QtRBgPep39UoWKg6xLf1dN6i_AA/viewform?c=0&w=1");
+                                i.putExtra("LINK", "https://docs.google.com/forms/d/e/1FAIpQLSeyKwk2-nt0MTmIkS8MNw-XppEN_vbmUB-svnIm0xEPdtZy8w/viewform");
                                 startActivity(i);
                                 break;
                             case 1:
                                 Intent in = new Intent(getContext(), ApplyNow.class);
-                                in.putExtra("LINK", "https://docs.google.com/forms/d/e/1FAIpQLScplEIggX-A3kqjI_71a2YcHyXhNYlFHUv8g4LPSqCBCWaeJg/viewform?c=0&w=1&includes_info_params=true");
+                                in.putExtra("LINK","https://docs.google.com/forms/d/e/1FAIpQLScYdlmt4POYrKUtVCfO04rURVod6oWtkgfGZLBx7npwb-uuZA/viewform" );
                                 startActivity(in);
                                 break;
                         }

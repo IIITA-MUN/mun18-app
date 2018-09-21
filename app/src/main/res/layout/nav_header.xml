@@ -2,21 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="192dp"
-    android:background="@drawable/dark_background"
+    android:background="@drawable/dark1_background"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"
     android:gravity="bottom">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:src="@drawable/iiita_mun"/>
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mun_logo_iiita"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="IIITA MUN 2018"
         android:textSize="22dp"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>
