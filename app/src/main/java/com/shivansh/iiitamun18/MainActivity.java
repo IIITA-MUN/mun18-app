@@ -44,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 openFBPage("https://drive.google.com/file/d/1UbTbbOvuf2KBKgRQ9IDzrFCvocu4lWSM/view?usp=drivesdk");
             }
         });
+        Button schedule = findViewById(R.id.schedule);
+        schedule.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openFBPage("https://drive.google.com/open?id=1k9VLtpTK5rwlYIXFEXSDjlTV8Ba27ox-");
+            }
+        });
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(

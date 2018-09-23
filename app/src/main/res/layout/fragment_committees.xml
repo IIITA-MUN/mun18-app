@@ -84,6 +84,15 @@
                         android:fontFamily="sans-serif"
                         android:textSize="18sp"
                         android:id="@+id/disec_site"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Background Guide"
+                        android:background="@color/DodgerBlue"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:id="@+id/disec_bg"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -145,6 +154,15 @@
                         android:layout_height="wrap_content"
                         android:text="Know More"
                         android:id="@+id/unsc_site"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif"
+                        android:background="@color/DodgerBlue"/>
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Background Guide"
+                        android:id="@+id/unsc_bg"
                         android:textSize="18sp"
                         android:fontFamily="sans-serif"
                         android:background="@color/DodgerBlue"/>

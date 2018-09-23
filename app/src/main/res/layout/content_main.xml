@@ -19,100 +19,114 @@
             android:theme="@style/AppTheme"
             android:background="@color/Black"
             app:titleTextColor="@color/White" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-            <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/mun_logo_iiita" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="with committees"
+            android:textColor="@color/White"
+            android:gravity="center_horizontal"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/rl"
+            android:orientation="horizontal">
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
-
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unhrc"
+                    android:orientation="vertical">
                     <ImageView
-                        android:layout_width="190dp"
-                        android:layout_height="190dp"
-                        android:scaleType="centerInside"
-                        android:layout_gravity="center"
-                        android:src="@drawable/mun_logo_iiita" />
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/unhrc"/>
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="with committees"
-                    android:textColor="@color/White"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="casual"
-                    android:textSize="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"/>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:id="@+id/rl"
-                    android:orientation="horizontal">
-                    <RelativeLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:gravity="center_horizontal"
-                        android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/unhrc"
-                        android:orientation="vertical">
-                     <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/unhrc"/>
+                        android:layout_marginTop="15dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:textAlignment="center"
+                        android:text="UNHRC"/>
+                </LinearLayout>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:textSize="20sp"
-                            android:textColor="@color/White"
-                            android:textAlignment="center"
-                            android:text="UNHRC"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_toRightOf="@+id/unhrc"
-                        android:layout_marginLeft="60dp"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/unhrc"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
                     <ImageView
                         android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:src="@drawable/g20"
                         android:layout_gravity="end"
                         />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:textSize="20sp"
-                            android:textColor="@color/White"
-                            android:textAlignment="center"
-                            android:text="G20"/>
-
-                    </LinearLayout>
-                    </RelativeLayout>
-                    <Button
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="14dp"
-                        android:layout_alignParentBottom="true"
-                        android:backgroundTint="@color/DodgerBlue"
-                        android:fontFamily="sans-serif-smallcaps"
-                        android:textAlignment="center"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20sp"
                         android:textColor="@color/White"
-                        android:id="@+id/letter"
-                        android:text="Message From Secretary General"
-                        android:textSize="21sp"/>
-                </RelativeLayout>
+                        android:textAlignment="center"
+                        android:text="G20"/>
 
                 </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/DodgerBlue"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:id="@+id/letter"
+            android:text="Message From Secretary General"
+            android:textSize="21sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:backgroundTint="@color/DodgerBlue"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:id="@+id/schedule"
+            android:text="Schedule"
+            android:textSize="21sp"/>
+    </LinearLayout>
+</ScrollView>
 
             </LinearLayout>
 

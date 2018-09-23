@@ -30,10 +30,24 @@ public class CommitteesFragment extends Fragment {
             }
         });
 
+        Button bg1 = (Button)rootview.findViewById(R.id.disec_bg);
+        bg1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openWebPage("https://drive.google.com/open?id=1nizfsf-F3mwNt-lvMkqO3oM3OPBELe9A");
+            }
+        });
+
         Button unscsite = (Button)rootview.findViewById(R.id.unsc_site);
         unscsite.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 openWebPage("https://mun.iiita.ac.in/home/g20.html");
+            }
+        });
+        
+        Button bg2 = (Button)rootview.findViewById(R.id.unsc_bg);
+        bg2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openWebPage("https://drive.google.com/open?id=1Iq_CoyCopusqLYK4SpPW1QU2vIxzn_BO");
             }
         });
 
